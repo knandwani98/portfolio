@@ -1,0 +1,44 @@
+{
+  "stack": [
+    {
+      "label": "Next JS",
+      "icon": "/stack/nextjs.svg"
+    },
+    {
+      "label": "React",
+      "icon": "/stack/react.svg"
+    },
+    {
+      "label": "React Native",
+      "icon": "/stack/react.svg"
+    },
+    {
+      "label": "Redux",
+      "icon": "/stack/redux.svg"
+    },
+    {
+      "label": "Typescript",
+      "icon": "/stack/ts.svg"
+    },
+    {
+      "label": "Express",
+      "icon": "/stack/express.svg"
+    },
+    {
+      "label": "Node JS",
+      "icon": "/stack/node.svg"
+    },
+    {
+      "label": "Mongo DB",
+      "icon": "/stack/mongodb.svg"
+    },
+    {
+      "label": "Tailwind CSS",
+      "icon": "/stack/tailwind.svg"
+    },
+    {
+      "label": "SASS",
+      "icon": "/stack/scss.svg"
+    }
+  ]
+}

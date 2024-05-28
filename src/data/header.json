@@ -1,0 +1,21 @@
+{
+  "header": [
+    {
+      "label": "about",
+      "link": "/about"
+    },
+    {
+      "label": "work",
+      "link": "/work"
+    },
+    {
+      "label": "blog",
+      "link": "/blog"
+    },
+    {
+      "label": "contact me",
+      "link": "/contact",
+      "cta": true
+    }
+  ]
+}
