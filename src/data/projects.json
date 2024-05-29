@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "img": "/projects/pixa.png",
+      "title": "Pixa",
+      "description": "Beautiful High Resolution Images Downloading Web App.",
+      "tags": ["shadcn", "tailwind css", "infinite-scrolling"],
+      "links": {
+        "github": "https://github.com/knandwani98/pixa",
+        "live": "https://pixa-images.vercel.app/"
+      }
+    },
+    {
+      "img": "/projects/weatherwise.png",
+      "title": "WeatherWise",
+      "description": "A simple Weather Forecasting Web App with Live Location enable",
+      "tags": ["Live Location", "React", "OpenWeather API"],
+      "links": {
+        "github": "https://github.com/knandwani98/weatherwise",
+        "live": "https://weather-wise-umber.vercel.app/"
+      }
+    },
+    {
+      "img": "/projects/pixa.png",
+      "title": "Pixa",
+      "description": "Beautiful High Resolution Images Downloading Web App.",
+      "tags": ["shadcn", "tailwind css", "infinite-scrolling"],
+      "links": {
+        "github": "",
+        "live": ""
+      }
+    },
+    {
+      "img": "/projects/pixa.png",
+      "title": "Pixa",
+      "description": "Beautiful High Resolution Images Downloading Web App.",
+      "tags": ["shadcn", "tailwind css", "infinite-scrolling"],
+      "links": {
+        "github": "https://github.com/knandwani98/pixa",
+        "live": "https://pixa-images.vercel.app/"
+      }
+    }
+  ]
+}

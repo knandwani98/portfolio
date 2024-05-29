@@ -7,7 +7,7 @@ export const Backdrop = (props: { theme?: "white" | "black" }) => {
   return (
     <div
       className={cn(
-        "fixed inset-0 -z-50",
+        "fixed inset-0",
         theme === "white" ? "noise-white" : "noise-black"
       )}
     ></div>

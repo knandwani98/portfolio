@@ -1,8 +1,8 @@
 {
-  "stack": [
+  "data": [
     {
       "label": "Next JS",
-      "icon": "/stack/nextjs.svg"
+      "icon": "/stack/next.svg"
     },
     {
       "label": "React",
@@ -13,6 +13,18 @@
       "icon": "/stack/react.svg"
     },
     {
+      "label": "Node JS",
+      "icon": "/stack/node.svg"
+    },
+    {
+      "label": "Express",
+      "icon": "/stack/express.svg"
+    },
+    {
+      "label": "Mongo DB",
+      "icon": "/stack/mongodb.svg"
+    },
+    {
       "label": "Redux",
       "icon": "/stack/redux.svg"
     },
@@ -21,16 +33,16 @@
       "icon": "/stack/ts.svg"
     },
     {
-      "label": "Express",
-      "icon": "/stack/express.svg"
+      "label": "Firebase",
+      "icon": "/stack/firebase.svg"
     },
     {
-      "label": "Node JS",
-      "icon": "/stack/node.svg"
+      "label": "Postman",
+      "icon": "/stack/postman.svg"
     },
     {
-      "label": "Mongo DB",
-      "icon": "/stack/mongodb.svg"
+      "label": "GIT",
+      "icon": "/stack/git.svg"
     },
     {
       "label": "Tailwind CSS",
@@ -39,6 +51,10 @@
     {
       "label": "SASS",
       "icon": "/stack/scss.svg"
+    },
+    {
+      "label": "Figma",
+      "icon": "/stack/figma.svg"
     }
   ]
 }

@@ -1,7 +1,10 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import { bebas } from "./layout";
-import * as data from "@/data/stack.json";
+import * as stack from "@/data/stack.json";
+import * as projects from "@/data/projects.json";
+import { SlideCarousel } from "@/components/SlideCarousel";
+import { ProjectCard } from "@/components/ProjectCard";
 
 const Home = () => {
   return (
@@ -19,7 +22,7 @@ const Home = () => {
             <span className="block">web app developer</span>
           </h1>
 
-          <p className="font-black mt-4 text-xl">
+          <p className="mt-4 text-xl">
             If you&apos;re looking for a freelance developer to help bring an
             idea to life and you&apos;re on a tight timeline -- let&apos;s jam
           </p>
@@ -28,27 +31,27 @@ const Home = () => {
 
       {/* Tech Stack */}
       <section className="mt-16">
-        <div className="my-container">
-          <ul className="flex justify-start items-center gap-4 flex-wrap">
-            {data.stack.map((tech, i) => {
-              return (
-                <li key={i}>
-                  <div className="h-60 w-60 bg-secondary-foreground rounded-3xl flex flex-col items-center justify-center">
-                    <img
-                      className="w-20 h-20"
-                      src={tech.icon}
-                      alt={tech.label}
-                    />
-                    <span className="text-primary-foreground mt-4">
-                      {tech.label}
-                    </span>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+        <SlideCarousel data={stack.data} />
       </section>
+
+      {/* Latest Projects */}
+      {projects.data.length > 0 && (
+        <section className="mt-16 bg-primary">
+          <div className="my-container py-16">
+            <h1
+              className={cn(
+                bebas.className,
+                "text-9xl text-primary-foreground mb-16"
+              )}
+            >
+              Latest Projects
+            </h1>
+            {projects.data.slice(0, 3).map((project, i) => (
+              <ProjectCard key={i} data={project} right={i % 2 === 0} />
+            ))}
+          </div>
+        </section>
+      )}
     </>
   );
 };
