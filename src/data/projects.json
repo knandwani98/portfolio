@@ -11,6 +11,26 @@
       }
     },
     {
+      "img": "/projects/calculator.png",
+      "title": "Compound Calculator",
+      "description": "A High-end Complex Compound Calculator with both yearly and monthly breakdowns",
+      "tags": ["NextJS", "Lucid Icons", "shadcn", "tailwind css"],
+      "links": {
+        "github": "https://github.com/knandwani98/sip-calculator",
+        "live": "https://k-compound-calculator.vercel.app"
+      }
+    },
+    {
+      "img": "/projects/hijingo.png",
+      "title": "Hi!Jingo",
+      "description": "A Traditional Japanese Board Game with Modern Twist",
+      "tags": ["NextJS", "Lucid Icons", "shadcn", "tailwind css"],
+      "links": {
+        "github": "https://github.com/knandwani98/hi-jingo",
+        "live": "https://hi-jingo.vercel.app"
+      }
+    },
+    {
       "img": "/projects/weatherwise.png",
       "title": "WeatherWise",
       "description": "A simple Weather Forecasting Web App with Live Location enable",
@@ -21,23 +41,13 @@
       }
     },
     {
-      "img": "/projects/pixa.png",
-      "title": "Pixa",
-      "description": "Beautiful High Resolution Images Downloading Web App.",
-      "tags": ["shadcn", "tailwind css", "infinite-scrolling"],
+      "img": "/projects/quiz.png",
+      "title": "Quiz App",
+      "description": "A High-end Quiz App which contains three different levels of difficulties",
+      "tags": ["react", "SCSS", "Table"],
       "links": {
-        "github": "",
-        "live": ""
-      }
-    },
-    {
-      "img": "/projects/pixa.png",
-      "title": "Pixa",
-      "description": "Beautiful High Resolution Images Downloading Web App.",
-      "tags": ["shadcn", "tailwind css", "infinite-scrolling"],
-      "links": {
-        "github": "https://github.com/knandwani98/pixa",
-        "live": "https://pixa-images.vercel.app/"
+        "github": "https://github.com/knandwani98/quiz-app",
+        "live": "https://knandwani98.github.io/quiz-app/"
       }
     }
   ]

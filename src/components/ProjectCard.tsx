@@ -13,19 +13,19 @@ export const ProjectCard = (props: {
   const { data, right } = props;
 
   return (
-    <div className="flex gap-2 my-8 relative z-20">
+    <div className="flex gap-1 my-4 relative z-20 max-h-120">
       {/* PROJECT IMAGE CARD */}
       <Link
         target="_blank"
         href={data.links?.live || ""}
         className={cn(
-          "w-full sm:w-[60%] rounded-3xl sm:rounded-th overflow-hidden",
+          "w-full sm:w-[65%] rounded-3xl sm:rounded-th overflow-hidden",
           right && "order-1"
         )}
       >
         <Image
           src={data.img || ""}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-fill"
           alt={data.title!}
           width={1000}
           height={1000}
@@ -33,26 +33,26 @@ export const ProjectCard = (props: {
       </Link>
 
       {/* PROJECT DETAILS CARD */}
-      <div className="bg-primary-foreground sm:w-[40%] w-full rounded-3xl sm:rounded-th p-8 sm:p-16 relative">
-        <div className="">
+      <div className="bg-primary-foreground sm:w-[35%] w-full rounded-3xl sm:rounded-th p-8 sm:p-16 relative">
+        <div>
           <h2 className="text-5xl font-semibold">{data.title}</h2>
-          <p className="mt-2 text-xl line-clamp-2">{data.description}</p>
+          <p className="mt-6 line-clamp-2">{data.description}</p>
         </div>
-        <Button
-          className={cn(
-            bebas.className,
-            "absolute left-2 right-2 bottom-2 sm:py-16 rounded-3xl sm:rounded-th  sm:text-5xl",
-            !data.links?.github && "cursor-not-allowed"
-          )}
+        <Link
+          target="_blank"
+          className={cn(!data.links?.github && "cursor-not-allowed")}
+          href={data.links?.github || ""}
         >
-          <Link
-            target="_blank"
-            className={cn(!data.links?.github && "cursor-not-allowed")}
-            href={data.links?.github || ""}
+          <Button
+            className={cn(
+              bebas.className,
+              "absolute left-2 right-2 bottom-2 sm:py-16 rounded-3xl sm:rounded-th  sm:text-5xl",
+              !data.links?.github && "cursor-not-allowed"
+            )}
           >
             View More
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </div>
     </div>
   );
