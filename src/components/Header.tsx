@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import * as header from "@/data/header.json";
@@ -7,19 +9,18 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 import { bebas } from "@/app/layout";
+import { usePathname } from "next/navigation";
 
 export const Header = () => {
+  const path = usePathname();
+
   return (
     <header className="my-container relative z-10">
-      <div className="flex justify-between items-center px-4 mt-4 rounded-full bg-white shadow-sm">
+      <div className="flex justify-between items-center px-4 mt-8 rounded-full bg-white shadow">
         <div className="flex justify-center items-center gap-2">
-          <Button
-            variant={"outline"}
-            className="w-8 h-8 rounded-full border border-primary hover:bg-primary"
-          />
-          <Link href={"/"} className={cn(bebas.className, "text-3xl")}>
+          <Button className="w-8 h-8 rounded-full border border-primary hover:bg-primary" />
+          <Link href={"/"} className="ml-2">
             <Image
-              className=""
               src={"/logo-black.svg"}
               alt={VAL.NAME}
               width={350}
@@ -36,7 +37,8 @@ export const Header = () => {
                   <Link
                     className={cn(
                       !nav.cta &&
-                        "capitalize opacity-60 hover:opacity-100 py-6 block"
+                        "capitalize opacity-60 hover:opacity-100 py-6 block",
+                      path === nav.link && "opacity-100 font-semibold"
                     )}
                     href={nav.link}
                   >

@@ -5,6 +5,8 @@ import * as stack from "@/data/stack.json";
 import * as projects from "@/data/projects.json";
 import { SlideCarousel } from "@/components/SlideCarousel";
 import { ProjectCard } from "@/components/ProjectCard";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -36,7 +38,7 @@ const Home = () => {
 
       {/* Latest Projects */}
       {projects.data.length > 0 && (
-        <section className="mt-16 bg-primary">
+        <section className="mt-16 bg-primary pb-24">
           <div className="my-container py-16">
             <h1
               className={cn(
@@ -50,6 +52,16 @@ const Home = () => {
               <ProjectCard key={i} data={project} right={i % 2 === 0} />
             ))}
           </div>
+
+          <Link
+            href={"/work"}
+            className={cn(
+              bebas.className,
+              "flex justify-center items-center relative z-10 w-full sm:py-10 rounded-3xl sm:rounded-th  sm:text-5xl border border-secondary text-primary-foreground"
+            )}
+          >
+            View More
+          </Link>
         </section>
       )}
     </>

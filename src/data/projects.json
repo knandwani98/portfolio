@@ -4,7 +4,7 @@
       "img": "/projects/pixa.png",
       "title": "Pixa",
       "description": "Beautiful High Resolution Images Downloading Web App.",
-      "tags": ["shadcn", "tailwind css", "infinite-scrolling"],
+      "tags": ["Dark Theme", "shadcn", "tailwind css", "infinite-scrolling"],
       "links": {
         "github": "https://github.com/knandwani98/pixa",
         "live": "https://pixa-images.vercel.app/"
@@ -48,6 +48,36 @@
       "links": {
         "github": "https://github.com/knandwani98/quiz-app",
         "live": "https://knandwani98.github.io/quiz-app/"
+      }
+    },
+    {
+      "img": "/projects/ss.png",
+      "title": "Streetstyle",
+      "description": "A modern complex e-commerce web app but still needs some work",
+      "tags": ["react", "SCSS"],
+      "links": {
+        "github": "https://github.com/knandwani98/shop-shop",
+        "live": "https://shopshop-rho.vercel.app/"
+      }
+    },
+    {
+      "img": "/projects/gh.png",
+      "title": "Github Battle App",
+      "description": "A app which compares two different github account and can compete with scores",
+      "tags": ["react", "SCSS", "Github API"],
+      "links": {
+        "github": "https://github.com/knandwani98/gh-battle-app",
+        "live": "https://knandwani98.github.io/gh-battle-app/"
+      }
+    },
+    {
+      "img": "/projects/code.png",
+      "title": "A Code Editor",
+      "description": "A real time HTML & CSS editor",
+      "tags": ["react", "SCSS", "Github API"],
+      "links": {
+        "github": "https://github.com/knandwani98/code-editor",
+        "live": "https://knandwani98.github.io/code-editor/"
       }
     }
   ]
