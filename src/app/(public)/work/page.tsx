@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
 import React from "react";
-import { bebas } from "../layout";
 import * as projects from "@/data/projects.json";
 import { ProjectCard } from "@/components/ProjectCard";
+import { bebas } from "@/utils/fonts";
 
 const Work = () => {
   return (
@@ -18,11 +18,10 @@ const Work = () => {
             Our Work
           </h1>
 
-          <div>
+          <div className="mb-32">
             {projects.data.map((project, i) => (
               <ProjectCard key={i} data={project} right={i % 2 === 0} />
             ))}
-            ƒ
           </div>
         </div>
       </section>

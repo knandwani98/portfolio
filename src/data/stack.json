@@ -1,6 +1,18 @@
 {
   "data": [
     {
+      "label": "HTML",
+      "icon": "/stack/html.svg"
+    },
+    {
+      "label": "CSS",
+      "icon": "/stack/css.svg"
+    },
+    {
+      "label": "Javascript",
+      "icon": "/stack/js.svg"
+    },
+    {
       "label": "Next JS",
       "icon": "/stack/next.svg"
     },
@@ -50,7 +62,7 @@
     },
     {
       "label": "SASS",
-      "icon": "/stack/scss.svg"
+      "icon": "/stack/sass.svg"
     },
     {
       "label": "Figma",

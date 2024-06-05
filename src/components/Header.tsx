@@ -8,8 +8,8 @@ import { VAL } from "@/lib/constants";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
-import { bebas } from "@/app/layout";
 import { usePathname } from "next/navigation";
+import { bebas } from "@/utils/fonts";
 
 export const Header = () => {
   const path = usePathname();

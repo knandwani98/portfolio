@@ -1,10 +1,10 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
-import { bebas } from "@/app/layout";
 import Image from "next/image";
 import { Project } from "@/lib/types";
 import Link from "next/link";
+import { bebas } from "@/utils/fonts";
 
 export const ProjectCard = (props: {
   data: Partial<Project>;

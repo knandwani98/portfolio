@@ -1,12 +1,11 @@
 import { cn } from "@/lib/utils";
 import React from "react";
-import { bebas } from "./layout";
 import * as stack from "@/data/stack.json";
 import * as projects from "@/data/projects.json";
 import { SlideCarousel } from "@/components/SlideCarousel";
 import { ProjectCard } from "@/components/ProjectCard";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { bebas } from "@/utils/fonts";
 
 const Home = () => {
   return (
@@ -57,10 +56,34 @@ const Home = () => {
             href={"/work"}
             className={cn(
               bebas.className,
-              "flex justify-center items-center relative z-10 w-full sm:py-10 rounded-3xl sm:rounded-th  sm:text-5xl border border-secondary text-primary-foreground"
+              "my-container flex justify-center items-center relative z-10 w-full sm:py-10 rounded-3xl sm:rounded-th sm:text-5xl border border-secondary text-primary-foreground"
             )}
           >
-            View More
+            View More of my projects
+          </Link>
+        </section>
+      )}
+
+      {/* Latest Blogs */}
+      {projects.data.length > 0 && (
+        <section className="pb-24">
+          <div className="my-container py-16">
+            <h1 className={cn(bebas.className, "text-9xl mb-16")}>
+              Latest Blogs
+            </h1>
+            {/* {projects.data.slice(0, 3).map((project, i) => (
+              <ProjectCard key={i} data={project} right={i % 2 === 0} />
+            ))} */}
+          </div>
+
+          <Link
+            href={"/blog"}
+            className={cn(
+              bebas.className,
+              "my-container flex justify-center items-center relative z-10 w-full sm:py-10 rounded-3xl sm:rounded-th sm:text-5xl border border-primary"
+            )}
+          >
+            View More of my articles
           </Link>
         </section>
       )}
