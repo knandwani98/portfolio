@@ -1,6 +1,10 @@
 {
   "data": [
     {
+      "date": {
+        "month": "March",
+        "year": 2024
+      },
       "img": "/projects/pixa.png",
       "title": "Pixa",
       "description": "Beautiful High Resolution Images Downloading Web App.",
@@ -11,6 +15,10 @@
       }
     },
     {
+      "date": {
+        "month": "January",
+        "year": 2024
+      },
       "img": "/projects/calculator.png",
       "title": "Compound Calculator",
       "description": "A High-end Complex Compound Calculator with both yearly and monthly breakdowns",
@@ -21,6 +29,10 @@
       }
     },
     {
+      "date": {
+        "month": "December",
+        "year": 2023
+      },
       "img": "/projects/hijingo.png",
       "title": "Hi!Jingo",
       "description": "A Traditional Japanese Board Game with Modern Twist",
@@ -31,6 +43,10 @@
       }
     },
     {
+      "date": {
+        "month": "August",
+        "year": 2023
+      },
       "img": "/projects/weatherwise.png",
       "title": "WeatherWise",
       "description": "A simple Weather Forecasting Web App with Live Location enable",
@@ -41,6 +57,10 @@
       }
     },
     {
+      "date": {
+        "month": "March",
+        "year": 2023
+      },
       "img": "/projects/quiz.png",
       "title": "Quiz App",
       "description": "A High-end Quiz App which contains three different levels of difficulties",
@@ -51,6 +71,10 @@
       }
     },
     {
+      "date": {
+        "month": "July",
+        "year": 2023
+      },
       "img": "/projects/ss.png",
       "title": "Streetstyle",
       "description": "A modern complex e-commerce web app but still needs some work",
@@ -61,6 +85,10 @@
       }
     },
     {
+      "date": {
+        "month": "June",
+        "year": 2023
+      },
       "img": "/projects/gh.png",
       "title": "Github Battle App",
       "description": "A app which compares two different github account and can compete with scores",
@@ -71,6 +99,10 @@
       }
     },
     {
+      "date": {
+        "month": "April",
+        "year": 2023
+      },
       "img": "/projects/code.png",
       "title": "A Code Editor",
       "description": "A real time HTML & CSS editor",

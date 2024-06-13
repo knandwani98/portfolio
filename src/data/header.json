@@ -1,16 +1,12 @@
 {
   "data": [
     {
-      "label": "about",
-      "link": "/about"
-    },
-    {
       "label": "work",
       "link": "/work"
     },
     {
-      "label": "blog",
-      "link": "/blog"
+      "label": "about",
+      "link": "/about"
     },
     {
       "label": "contact me",

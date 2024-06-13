@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { Header } from "@/components/Header";
 import { Backdrop } from "@/components/Backdrop";
 import { poppins } from "@/utils/fonts";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Kushal Nandwani",
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Header />
         <Backdrop />
         {children}
+        <Footer />
       </body>
     </html>
   );

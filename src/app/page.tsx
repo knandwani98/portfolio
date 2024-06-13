@@ -16,14 +16,14 @@ const Home = () => {
           <h1
             className={cn(
               bebas.className,
-              "text-[58px] sm:text-[180px] tracking-normal leading-none mt-16"
+              "text-8xl sm:text-[180px] tracking-normal leading-none mt-16"
             )}
           >
             A full stack
             <span className="block">web app developer</span>
           </h1>
 
-          <p className="mt-4 text-xl">
+          <p className="mt-4 sm:text-xl">
             If you&apos;re looking for a freelance developer to help bring an
             idea to life and you&apos;re on a tight timeline -- let&apos;s jam
           </p>
@@ -37,12 +37,12 @@ const Home = () => {
 
       {/* Latest Projects */}
       {projects.data.length > 0 && (
-        <section className="mt-16 bg-primary pb-24">
-          <div className="my-container py-16">
+        <section className="mt-16 bg-primary pb-12 md:pb-16 lg:pb-20">
+          <div className="my-container py-10 sm:py-16">
             <h1
               className={cn(
                 bebas.className,
-                "text-9xl text-primary-foreground mb-16"
+                "text-7xl sm:text-9xl text-primary-foreground mb-8 sm:mb-16"
               )}
             >
               Latest Projects
@@ -56,34 +56,10 @@ const Home = () => {
             href={"/work"}
             className={cn(
               bebas.className,
-              "my-container flex justify-center items-center relative z-10 w-full sm:py-10 rounded-3xl sm:rounded-th sm:text-5xl border border-secondary text-primary-foreground"
+              "my-container flex justify-center items-center relative z-10 w-full py-4 sm:py-10 rounded-3xl sm:rounded-th text-2xl sm:text-5xl border border-secondary text-primary-foreground"
             )}
           >
             View More of my projects
-          </Link>
-        </section>
-      )}
-
-      {/* Latest Blogs */}
-      {projects.data.length > 0 && (
-        <section className="pb-24">
-          <div className="my-container py-16">
-            <h1 className={cn(bebas.className, "text-9xl mb-16")}>
-              Latest Blogs
-            </h1>
-            {/* {projects.data.slice(0, 3).map((project, i) => (
-              <ProjectCard key={i} data={project} right={i % 2 === 0} />
-            ))} */}
-          </div>
-
-          <Link
-            href={"/blog"}
-            className={cn(
-              bebas.className,
-              "my-container flex justify-center items-center relative z-10 w-full sm:py-10 rounded-3xl sm:rounded-th sm:text-5xl border border-primary"
-            )}
-          >
-            View More of my articles
           </Link>
         </section>
       )}

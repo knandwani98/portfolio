@@ -2,8 +2,6 @@
 
 import Marquee from "react-fast-marquee";
 import { Card } from "./Card";
-import { cn } from "@/lib/utils";
-import { useState } from "react";
 
 export const SlideCarousel = (props: {
   data: {
@@ -14,16 +12,16 @@ export const SlideCarousel = (props: {
   const { data } = props;
 
   return (
-    <Marquee autoFill>
+    <Marquee autoFill pauseOnClick>
       {data?.map((tech: any, i: number) => {
         return (
           <Card
             key={i}
             title={tech.label}
-            titleClass={"text-primary-foreground text-sm mt-4"}
+            titleClass={"text-primary-foreground text-sm mt-2"}
             icon={tech.icon}
-            iconClass={"w-16 h-16"}
-            className="bg-secondary-foreground mx-2 h-44 min-w-44 rounded-3xl sm:rounded-th flex flex-col items-center justify-center"
+            iconClass={"w-10 h-10 sm:w-16 sm:h-16"}
+            className="bg-secondary-foreground mx-2 w-28 h-28 sm:h-44 sm:w-44 rounded-3xl sm:rounded-th flex flex-col items-center justify-center cursor-grab"
           />
         );
       })}

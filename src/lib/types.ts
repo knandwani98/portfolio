@@ -8,4 +8,8 @@ export interface Project {
     github: string;
     live: string;
   };
+  date: {
+    month: string;
+    year: number;
+  };
 }
