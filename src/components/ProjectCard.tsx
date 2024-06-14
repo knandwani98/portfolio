@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Project } from "@/lib/types";
 import Link from "next/link";
 import { bebas } from "@/utils/fonts";
+import { ExternalLink } from "lucide-react";
 
 export const ProjectCard = (props: {
   data: Partial<Project>;
@@ -13,13 +14,13 @@ export const ProjectCard = (props: {
   const { data, right } = props;
 
   return (
-    <div className="flex gap-1 my-4 max-h-120">
+    <div className="flex gap-1 my-4 max-h-120 relative z-10">
       {/* PROJECT IMAGE CARD */}
       <Link
         target="_blank"
         href={data.links?.live || ""}
         className={cn(
-          "w-[50%] lg:w-[65%] rounded-3xl sm:rounded-th overflow-hidden",
+          "w-[50%] lg:w-[65%] rounded-3xl sm:rounded-th overflow-hidden transition-all delay-75 ease-in-out lg:hover:brightness-75",
           right && "order-1"
         )}
       >
@@ -56,11 +57,12 @@ export const ProjectCard = (props: {
           <Button
             className={cn(
               bebas.className,
-              "absolute left-2 right-2 bottom-2 py-4 md:py-10 lg:py-16 rounded-3xl sm:rounded-th text-xl md:text-4xl sm:text-5xl",
+              "absolute left-2 right-2 bottom-2 py-4 md:py-10 lg:py-16 rounded-3xl sm:rounded-th text-xl md:text-4xl sm:text-5xl flex justify-center items-center gap-4",
               !data.links?.github && "cursor-not-allowed"
             )}
           >
             View More
+            <ExternalLink />
           </Button>
         </Link>
       </div>

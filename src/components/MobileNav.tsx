@@ -26,7 +26,7 @@ export const MobileNav = (props: {
   return (
     props.isMobileNavOpen && (
       <section className="w-full h-dvh fixed inset-0 z-10 bg-black/30 backdrop-blur-sm">
-        <div className="w-4/5 min-h-screen bg-white rounded-r-xl">
+        <div className="w-4/5 min-h-screen bg-white">
           <Button
             onClick={() => props.setIsMobileNavOpen(false)}
             className="bg-transparent lg:hidden rounded-full p-0 z-50 fixed top-4 right-4"

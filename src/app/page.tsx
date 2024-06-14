@@ -23,10 +23,10 @@ const Home = () => {
             <span className="block">web app developer</span>
           </h1>
 
-          <p className="mt-4 sm:text-xl">
+          {/* <p className="mt-4 sm:text-xl">
             If you&apos;re looking for a freelance developer to help bring an
             idea to life and you&apos;re on a tight timeline -- let&apos;s jam
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -56,7 +56,7 @@ const Home = () => {
             href={"/work"}
             className={cn(
               bebas.className,
-              "my-container flex justify-center items-center relative z-10 w-full py-4 sm:py-10 rounded-3xl sm:rounded-th text-2xl sm:text-5xl border border-secondary text-primary-foreground"
+              "my-container flex justify-center items-center w-full py-4 sm:py-10 rounded-3xl sm:rounded-th text-2xl sm:text-5xl border border-secondary text-primary-foreground"
             )}
           >
             View More of my projects

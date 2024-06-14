@@ -1,28 +1,32 @@
 {
   "data": [
     {
-      "label": "call",
+      "label": "Call",
       "icon": "/socials/call.svg",
       "url": "tel:+91-8707077044"
     },
     {
-      "label": "email",
+      "label": "Email",
       "icon": "/socials/gmail.svg",
       "url": "mailto:kushalnandwani98@gmail.com"
     },
     {
-      "label": "whatsapp",
+      "label": "Whatsapp",
       "icon": "/socials/wa.svg",
       "url": "https://wa.me/918707077044"
     },
-
     {
-      "label": "linkedin",
+      "label": "X.com",
+      "icon": "/socials/x.svg",
+      "url": "https://x.com/knandwani98"
+    },
+    {
+      "label": "Linkedin",
       "icon": "/socials/linkedin.svg",
       "url": "https://www.linkedin.com/in/kushal-nandwani-303003153/"
     },
     {
-      "label": "github",
+      "label": "Github",
       "icon": "/socials/gh.svg",
       "url": "https://github.com/knandwani98/"
     },

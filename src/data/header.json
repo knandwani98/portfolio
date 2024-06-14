@@ -1,13 +1,14 @@
 {
   "data": [
     {
-      "label": "work",
-      "link": "/work"
-    },
-    {
       "label": "about",
       "link": "/about"
     },
+    {
+      "label": "work",
+      "link": "/work"
+    },
+
     {
       "label": "contact me",
       "link": "/contact",
